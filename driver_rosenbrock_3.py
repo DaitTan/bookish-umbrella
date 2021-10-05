@@ -3,11 +3,11 @@ from partx.run_part_x_macro_replication import run_part_x
 
 def test_function(X):  ##CHANGE
     # return (X[0]**2 + X[1] - 11)**2 + (X[1]**2 + X[0] - 7)**2 - 40 # Himmelblau's
-    # return (100 * (X[1] - X[0] **2)**2 + ((1 - X[0])**2)) - 20 # Rosenbrock
-    return (1 + (X[0] + X[1] + 1) ** 2 * (
-                19 - 14 * X[0] + 3 * X[0] ** 2 - 14 * X[1] + 6 * X[0] * X[1] + 3 * X[1] ** 2)) * (
-                       30 + (2 * X[0] - 3 * X[1]) ** 2 * (
-                           18 - 32 * X[0] + 12 * X[0] ** 2 + 48 * X[1] - 36 * X[0] * X[1] + 27 * X[1] ** 2)) - 50
+    return (100 * (X[1] - X[0] **2)**2 + ((1 - X[0])**2)) - 20 # Rosenbrock
+    # return (1 + (X[0] + X[1] + 1) ** 2 * (
+    #             19 - 14 * X[0] + 3 * X[0] ** 2 - 14 * X[1] + 6 * X[0] * X[1] + 3 * X[1] ** 2)) * (
+    #                    30 + (2 * X[0] - 3 * X[1]) ** 2 * (
+    #                        18 - 32 * X[0] + 12 * X[0] ** 2 + 48 * X[1] - 36 * X[0] * X[1] + 27 * X[1] ** 2)) - 50
 
 
 # Options initialization
@@ -25,8 +25,8 @@ continued_sampling_budget = 100
 number_of_BO_samples = [10]
 # R = number_of_BO_samples[0]
 # M = number_of_samples_gen_GP
-R = 10
-M = 100
+R = 20
+M = 500
 NGP = R*M
 
 # Mostly not changes. change with caution

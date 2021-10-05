@@ -25,8 +25,8 @@ continued_sampling_budget = 100
 number_of_BO_samples = [10]
 # R = number_of_BO_samples[0]
 # M = number_of_samples_gen_GP
-R = 10
-M = 100
+R = 20
+M = 500
 NGP = R*M
 
 # Mostly not changes. change with caution
