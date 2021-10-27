@@ -37,14 +37,14 @@ alpha = [0.05]
 delta = 0.001
 
 # Other Parameters
-number_of_macro_replications = 5
+number_of_macro_replications = 50
 start_seed = 1000
 fv_quantiles_for_gp = [0.5,0.95,0.99]
 
 
 points_for_unif_sampling = 10000
 
-BENCHMARK_NAME = "Goldstein_price_1"
+BENCHMARK_NAME = "Himmelblaus_1"
 
 run_part_x(BENCHMARK_NAME, test_function, test_function_dimension, region_support,
                 initialization_budget, max_budget, number_of_BO_samples, continued_sampling_budget, R, M,
