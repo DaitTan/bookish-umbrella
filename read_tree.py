@@ -101,7 +101,7 @@ def save_trees_plots_2(q, tree_dir, im_dir, options, Xc, Yc, Zc):
                             fc ='blue',
                             alpha = 0.1))
             ax.plot(i.data.samples_in[0,:,0], i.data.samples_in[0,:,1], 'b.', markersize = 1)
-    ax.contour(Xc, Yc, Zc>0, 0, colors='k')
+    ax.contour(Xc, Yc, Zc>1, 0, colors='k')
     for axis in ['top', 'bottom','left','right']:
         ax.spines[axis].set_linewidth(1.5)
     plt.savefig(im_dir, dpi = 400, bbox_inches = 'tight')
@@ -176,8 +176,8 @@ def save_trees_plots(q, tree_dir, im_dir, options):
     print("Points in Replication {} = {}".format(q, sum(points_in_list)))
 
 
-BENCHMARK_NAMES = ["Goldstein_price_1"]
-result_folder_name = "result_files_testing"
+BENCHMARK_NAMES = ["Goldstein_1"]
+result_folder_name = "new_kernel_gp"
 def test_function(X):  ##CHANGE
     # return (X[0]**2 + X[1] - 11)**2 + (X[1]**2 + X[0] - 7)**2 - 40 # Himmelblau's
     # return (100 * (X[1] - X[0] **2)**2 + ((1 - X[0])**2)) - 20 # Rosenbrock
@@ -187,7 +187,7 @@ def test_function(X):  ##CHANGE
                            18 - 32 * X[0] + 12 * X[0] ** 2 + 48 * X[1] - 36 * X[0] * X[1] + 27 * X[1] ** 2)) - 50
 
 for BENCHMARK_NAME in BENCHMARK_NAMES:
-    macro_reps = 2
+    macro_reps = 1
     result_directory = pathlib.Path().joinpath(result_folder_name).joinpath(BENCHMARK_NAME).joinpath(BENCHMARK_NAME + "_result_generating_files")
 
     im_directory = pathlib.Path().joinpath('plots_new')

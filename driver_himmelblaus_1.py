@@ -1,5 +1,5 @@
 import numpy as np
-from partx.run_part_x_macro_replication import run_part_x
+from partx.interfaces.run_standalone import run_partx
 
 def test_function(X):  ##CHANGE
     return (X[0]**2 + X[1] - 11)**2 + (X[1]**2 + X[0] - 7)**2 - 40 # Himmelblau's
@@ -42,12 +42,12 @@ start_seed = 1000
 fv_quantiles_for_gp = [0.5,0.95,0.99]
 
 
-points_for_unif_sampling = 10000
-
+results_at_confidence = 0.95
+results_folder_name = "new_kernel_gp"
 BENCHMARK_NAME = "Himmelblaus_1"
-
-run_part_x(BENCHMARK_NAME, test_function, test_function_dimension, region_support,
-                initialization_budget, max_budget, number_of_BO_samples, continued_sampling_budget, R, M,
-                branching_factor, nugget_mean, nugget_std_dev, alpha, delta, 
-                number_of_macro_replications, start_seed, fv_quantiles_for_gp, NGP, points_for_unif_sampling)
+results_at_confidence = 0.95
+run_partx(BENCHMARK_NAME, test_function, test_function_dimension, region_support, 
+              initialization_budget, max_budget, continued_sampling_budget, number_of_BO_samples, 
+              NGP, M, R, branching_factor, nugget_mean, nugget_std_dev, alpha, delta,
+              number_of_macro_replications, start_seed, fv_quantiles_for_gp, results_at_confidence, results_folder_name)
                 

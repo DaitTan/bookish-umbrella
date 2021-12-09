@@ -33,18 +33,16 @@ alpha = [0.05]
 delta = 0.001
 
 # Other Parameters
-number_of_macro_replications = 2
-start_seed = 1000
+number_of_macro_replications = 50
+start_seed = 10000
 fv_quantiles_for_gp = [0.5,0.95,0.99]
 
 
-points_for_unif_sampling = 10000
-
-results_folder_name = "result_files"
-BENCHMARK_NAME = "Goldstein_price_1"
-
+results_folder_name = "Goldstein_price_results"
+BENCHMARK_NAME = "Goldstein_1"
+results_at_confidence = 0.95
 run_partx(BENCHMARK_NAME, test_function, test_function_dimension, region_support, 
               initialization_budget, max_budget, continued_sampling_budget, number_of_BO_samples, 
               NGP, M, R, branching_factor, nugget_mean, nugget_std_dev, alpha, delta,
-              number_of_macro_replications, start_seed, fv_quantiles_for_gp, results_folder_name)
+              number_of_macro_replications, start_seed, fv_quantiles_for_gp, results_at_confidence, results_folder_name)
                 
