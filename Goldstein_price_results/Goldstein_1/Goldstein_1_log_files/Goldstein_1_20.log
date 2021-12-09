@@ -97,3 +97,20 @@ Wed, 08 Dec 2021 22:11:36 :: Unclassified regions = 57
 Wed, 08 Dec 2021 22:11:36 :: Unidentified regions = 0
 Wed, 08 Dec 2021 22:11:36 :: Budget available for replication = 2567
 Wed, 08 Dec 2021 22:11:36 :: **************************************************
+Wed, 08 Dec 2021 22:43:35 :: **************************************************
+Wed, 08 Dec 2021 22:43:35 :: Mid Classified regions = 38
+Wed, 08 Dec 2021 22:43:35 :: Mid Unclassified regions = 98
+Wed, 08 Dec 2021 22:43:35 :: Mid Unidentified regions = 0
+Wed, 08 Dec 2021 22:49:02 :: Classified regions = 38
+Wed, 08 Dec 2021 22:49:02 :: Unclassified regions = 98
+Wed, 08 Dec 2021 22:49:02 :: Unidentified regions = 0
+Wed, 08 Dec 2021 22:49:02 :: Budget available for replication = 1046
+Wed, 08 Dec 2021 22:49:02 :: **************************************************
+Wed, 08 Dec 2021 22:49:02 :: **************************************************
+Wed, 08 Dec 2021 22:49:02 :: In the last act for replication 20:
+Wed, 08 Dec 2021 22:49:02 :: Budget Used for replication 20 = 3954
+Wed, 08 Dec 2021 22:49:02 :: Budget available for replication 20 = 1046
+Wed, 08 Dec 2021 22:49:02 :: Classified regions = 38
+Wed, 08 Dec 2021 22:49:02 :: Unclassified regions = 98
+Wed, 08 Dec 2021 22:49:02 :: Unidentified regions = 0
+Wed, 08 Dec 2021 22:49:02 :: **************************************************
